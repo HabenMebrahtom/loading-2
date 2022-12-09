@@ -58,9 +58,10 @@ function App() {
               <ChangingProgressProvider values={[0,  20,  40,   60,  80,  100]}>
                  {percentage => (
                     <CircularProgressbar 
-                        value={percentage} 
-                        text={`${percentage}%`}
+                        value={100 - percentage} 
+                        text={`${100 - percentage}%`}
                         strokeWidth={3}
+                        counterClockwise
                         styles={buildStyles({
                         pathTransition: percentage === 0 ? "none" : "stroke-dashoffset 1s ease 0s",
                         pathColor: "grey",
@@ -81,7 +82,7 @@ function App() {
                   {
                     index === current && (
                       <div className="quote">
-                         <span>{ text.quote }</span> <span>- { text.author }</span>
+                         <span>"{ text.quote }"</span> <span>- { text.author }</span>
                       </div>
                     )
                   }
