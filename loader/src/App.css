@@ -1,0 +1,38 @@
+.loader-page {
+  background-color:  #F5F5F5;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+.card {
+   width: 1138px;
+   height: 292px;
+   padding: 20px;
+   border-top: 6px solid #747272;
+   border-bottom: 6px solid #747272;
+   border-left: 6px solid #747272;
+   border-radius: 100px 0  0 100px;
+   position: absolute;
+   top: 30%;
+   right: 0;
+
+   display: flex;
+}
+
+.spin-container {
+  margin: 20px 50px;
+}
+
+.quote {
+  width: 748px;
+  height: 243px;
+  font-size: 40px;
+  color: #747272;
+  padding: 0 20px;
+}
+
+.percentage {
+  font-size: 36px;
+  font-weight: 400;
+}
